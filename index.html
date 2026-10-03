@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10101c">
+    <meta name="description" content="MITOOO - Fortnite Gaming Community">
+    <title>MITOOO | Fortnite Universe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <header class="navbar">
+        <a href="#home" class="logo">MITOOO<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="فتح القائمة" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">الرئيسية</a>
+            <a href="#about">عن اللعبة</a>
+            <a href="#modes">الأطوار</a>
+            <a href="#tips">نصائح</a>
+            <a href="#contact">تواصل معي</a>
+        </nav>
+
+        <a class="nav-cta" href="#contact">LET'S CONNECT ↗</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="eyebrow">
+                    <span class="live-dot"></span>
+                    WELCOME TO MY GAMING UNIVERSE
+                </div>
+
+                <h1>
+                    ENTER THE<br>
+                    <span>FORTNITE</span><br>
+                    UNIVERSE.
+                </h1>
+
+                <p>
+                    مرحباً بيك في عالم MITOOO!
+                    اكتشف الأطوار، تعلّم حيل جديدة،
+                    وعِش أجواء Fortnite بطريقتك.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#modes" class="btn btn-primary">
+                        اكتشف الأطوار <span>↙</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        تابع MITOOO ↗
+                    </a>
+                </div>
+
+                <div class="hero-tags">
+                    <span>🎮 GAMING</span>
+                    <span>⚡ FORTNITE</span>
+                    <span>💜 COMMUNITY</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="hero-card">
+                    <div class="hero-card-top">
+                        <span>MITOOO</span>
+                        <span class="status">PLAYER ONLINE</span>
+                    </div>
+
+                    <div class="hero-symbol">M</div>
+
+                    <div class="hero-card-bottom">
+                        <div>
+                            <small>YOUR NEXT ADVENTURE</small>
+                            <h2>START HERE.</h2>
+                        </div>
+                        <span class="level">GG</span>
+                    </div>
+                </div>
+
+                <div class="floating-label label-top">⚡ LEVEL UP</div>
+                <div class="floating-label label-bottom">★ GAME ON</div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="section-heading">
+                <span class="section-kicker">01 / ABOUT</span>
+                <h2>عالم <span>MITOOO</span></h2>
+                <p>مكان لعشاق Fortnite والألعاب والتحديات.</p>
+            </div>
+
+            <div class="about-grid">
+                <article class="info-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>طور مهاراتك</h3>
+                    <p>اكتشف نصائح تساعدك على تحسين التصويب والحركة وبناء استراتيجيتك.</p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">🌌</div>
+                    <h3>اكتشف العالم</h3>
+                    <p>تعرّف على أطوار مختلفة وتجارب متنوعة داخل Fortnite.</p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">🤝</div>
+                    <h3>تواصل مع MITOOO</h3>
+                    <p>زور حساب Instagram وتابع المحتوى والتحديثات التي أشاركها.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section modes" id="modes">
+            <div class="section-heading">
+                <span class="section-kicker">02 / GAME MODES</span>
+                <h2>CHOOSE YOUR <span>MODE</span></h2>
+                <p>اختار الطور اللي يناسب أسلوب لعبك.</p>
+            </div>
+
+            <div class="mode-grid">
+                <article class="mode-card battle">
+                    <div class="mode-number">01</div>
+                    <div class="mode-emoji">🪂</div>
+                    <span class="mode-label">SURVIVAL</span>
+                    <h3>Battle Royale</h3>
+                    <p>انزل إلى الجزيرة، اجمع المعدات، وحاول تكون آخر لاعب أو فريق صامد.</p>
+                    <button class="text-button" onclick="showMode('Battle Royale')">
+                        اكتشف الطور <span>←</span>
+                    </button>
+                </article>
+
+                <article class="mode-card zero">
+                    <div class="mode-number">02</div>
+                    <div class="mode-emoji">🎯</div>
+                    <span class="mode-label">PURE ACTION</span>
+                    <h3>Zero Build</h3>
+                    <p>ركّز على الحركة والتصويب واستعمال الغطاء بدون بناء الهياكل.</p>
+                    <button class="text-button" onclick="showMode('Zero Build')">
+                        اكتشف الطور <span>←</span>
+                    </button>
+                </article>
+
+                <article class="mode-card creative">
+                    <div class="mode-number">03</div>
+                    <div class="mode-emoji">🧩</div>
+                    <span class="mode-label">YOUR IMAGINATION</span>
+                    <h3>Creative</h3>
+                    <p>جرّب خرائط وتجارب يصنعها اللاعبون، من التدريب إلى التحديات.</p>
+                    <button class="text-button" onclick="showMode('Creative')">
+                        اكتشف الطور <span>←</span>
+                    </button>
+                </article>
+            </div>
+            <p class="small-note">الأطوار والتفاصيل قد تتغير حسب تحديثات اللعبة.</p>
+        </section>
+
+        <section class="section tips" id="tips">
+            <div class="section-heading">
+                <span class="section-kicker">03 / PLAYER GUIDE</span>
+                <h2>LEVEL UP <span>YOUR GAME</span></h2>
+                <p>نصائح بسيطة تقدر تطبقها في لعبك.</p>
+            </div>
+
+            <div class="tips-list">
+                <article class="tip-row">
+                    <span class="tip-num">01</span>
+                    <div>
+                        <h3>🎯 تدرب على التصويب</h3>
+                        <p>خصّص وقتاً للتدريب على تتبع الخصم والتحكم في حساسية الماوس.</p>
+                    </div>
+                </article>
+
+                <article class="tip-row">
+                    <span class="tip-num">02</span>
+                    <div>
+                        <h3>🗺️ اختار مكان النزول بعناية</h3>
+                        <p>تعلّم خريطة اللعب واختار مكاناً يناسب أسلوبك ومستوى خبرتك.</p>
+                    </div>
+                </article>
+
+                <article class="tip-row">
+                    <span class="tip-num">03</span>
+                    <div>
+                        <h3>⚙️ اضبط الإعدادات</h3>
+                        <p>جرّب إعدادات الرسومات والتحكم حتى تلقى الإعدادات المناسبة لجهازك.</p>
+                    </div>
+                </article>
+
+                <article class="tip-row">
+                    <span class="tip-num">04</span>
+                    <div>
+                        <h3>🧠 تعلّم من كل مباراة</h3>
+                        <p>راجع قراراتك داخل اللعبة وجرّب طرقاً جديدة بدل تكرار نفس الأخطاء.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="community" id="contact">
+            <div class="community-content">
+                <span class="section-kicker">04 / LET'S CONNECT</span>
+                <h2>READY TO JOIN<br><span>THE COMMUNITY?</span></h2>
+                <p>
+                    تابع MITOOO على Instagram واكتشف المحتوى
+                    وتواصل معي من خلال حسابي.
+                </p>
+
+                <!-- بدّل YOUR_USERNAME باسم حسابك الحقيقي -->
+                <a class="instagram-btn"
+                   href="https://www.instagram.com/h4m1too/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <span class="insta-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="18" height="18" rx="5"
+                                  fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="4"
+                                    fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+                        </svg>
+                    </span>
+                    <span class="insta-text">
+                        <strong>FOLLOW MITOOO</strong>
+                        <small>Join the community. Stay legendary.</small>
+                    </span>
+                    <span class="insta-arrow">↗</span>
+                </a>
+
+                <div class="contact-note">
+                    <span>✦</span> GAMING • COMMUNITY • GOOD VIBES
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">MITOOO<span>.</span></a>
+        <p>MADE FOR GAMERS, WITH PASSION.</p>
+        <a href="#home" class="back-top">العودة للأعلى ↑</a>
+        <small>
+            Fan-made Fortnite website. Not affiliated with Epic Games.
+        </small>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
